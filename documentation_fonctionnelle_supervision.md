@@ -2,8 +2,6 @@
 
 Infrastructure de supervision déployée sur un hyperviseur **Proxmox VE 9.2.18** : Zabbix, Prometheus, Grafana, Elastic Stack (Elasticsearch, Logstash, Kibana, Filebeat), capture réseau avec tshark et playbooks de réponse à incident.
 
-> Les captures d'écran sont référencées dans le dossier `images/` (fichiers `fig-01.png` à `fig-50.png`, numérotés selon leur ordre d'apparition dans le document source).
-
 ## Sommaire
 
 1. [Vue d'ensemble](#1-vue-densemble)
@@ -689,5 +687,3 @@ Deux scénarios, structurés selon le modèle **Contenir → Éradiquer → Réc
 | Grafana | `http://192.168.30.101:3000` | non précisé dans le document source | Mot de passe initial modifié à la première connexion |
 | Kibana | `http://192.168.30.104:5601` | à définir | La sécurité Elastic n'est pas activée (avertissement affiché par Kibana) |
 | Elasticsearch | `http://localhost:9200` (sur la VM ELK) | aucun | Accès local uniquement |
-
-> Les mots de passe ne doivent jamais figurer dans ce document ni dans le dépôt Git. Utiliser un gestionnaire de mots de passe.
